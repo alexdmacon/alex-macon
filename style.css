@@ -48,6 +48,9 @@ a {
 
 a:hover {
   text-decoration: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
 }
 
 /* Layout */
@@ -236,6 +239,9 @@ a:hover {
 
 .portfolio-item-title a:hover {
   text-decoration: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
 }
 
 .portfolio-item-title-plain {
@@ -282,15 +288,17 @@ a:hover {
 .blog-title {
   font-family: var(--font-serif);
   font-size: 16px;
-  color: var(--text-primary);
+  color: var(--accent);
   line-height: 1.4;
   font-weight: 400;
   text-decoration: none;
 }
 
 .blog-title:hover {
-  color: var(--accent);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
 }
 
 /* Resume */
@@ -402,13 +410,40 @@ a:hover {
   color: var(--text-tertiary);
 }
 
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
 .footer a {
   font-size: 12px;
   color: var(--accent);
 }
 
+.footer-linkedin {
+  display: flex;
+  align-items: center;
+  color: var(--text-tertiary);
+  transition: color 0.15s;
+}
+
+.footer-linkedin:hover {
+  color: var(--accent);
+  text-decoration: none !important;
+}
+
+.footer-linkedin svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
 .footer a:hover {
   text-decoration: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
 }
 
 /* Blog post pages */
